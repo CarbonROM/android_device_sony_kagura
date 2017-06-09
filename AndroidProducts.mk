@@ -13,5 +13,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_f8331.mk \
-                     $(LOCAL_DIR)/aosp_f8332.mk
+                     $(LOCAL_DIR)/aosp_f8332.mk \
+                     $(LOCAL_DIR)/carbon_kagura.mk \
+                     $(LOCAL_DIR)/carbon_kagura_dsds.mk
 
