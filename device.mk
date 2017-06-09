@@ -73,7 +73,7 @@ PRODUCT_PACKAGES += \
 
 # NFC config
 PRODUCT_PACKAGES += \
-    nfc_nci.kagura
+    nfc_nci.pn54x.default
 
 # Telephony Packages (AOSP)
 PRODUCT_PACKAGES += \
@@ -89,7 +89,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.usb.pid_suffix=1E7
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/sony/tone/platform.mk)
+$(call inherit-product, device/sony/tone-common/platform.mk)
 
 # copy wlan firmware
 $(call inherit-product-if-exists, vendor/broadcom/wlan/bcmdhd/firmware/bcm4359/device-bcm.mk)
