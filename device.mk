@@ -72,7 +72,7 @@ PRODUCT_PACKAGES += \
 
 # NFC config
 PRODUCT_PACKAGES += \
-    nfc_nci.pn54x.default
+    nfc_nci.kagura
 
 # Telephony Packages (AOSP)
 PRODUCT_PACKAGES += \
