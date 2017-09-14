@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/tone-common/PlatformConfigCarbon.mk
 include device/sony/tone-common/PlatformConfig.mk
+include device/sony/tone-common/PlatformConfigCarbon.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := F8331
 
