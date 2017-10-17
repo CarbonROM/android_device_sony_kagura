@@ -17,6 +17,9 @@ include device/sony/tone-common/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := F8331
 
+# Platform
+PRODUCT_PLATFORM := tone
+
 WIFI_BUS := PCIE
 
 # NFC
@@ -25,7 +28,16 @@ NXP_CHIP_FW_TYPE := PN547C2
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=kagura
 
-#Reserve space for data encryption (23857201152-16384)
+# Recovery config
+BOARD_SONY_INIT_FLAGS += -DDEV_BLOCK_FOTA_NUM="48"
+BOARD_SONY_INIT_FLAGS += -DDEV_BLOCK_FOTA_MAJOR="259"
+BOARD_SONY_INIT_FLAGS += -DDEV_BLOCK_FOTA_MINOR="16"
+
+# Partition information
+BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
+BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 6197084160
+# Reserve space for data encryption (23857201152-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 23857184768
 
 #TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
