@@ -70,17 +70,9 @@ PRODUCT_PACKAGES += \
     init.recovery.kagura \
     init.kagura
 
-# Lights
-PRODUCT_PACKAGES += \
-    lights.kagura
-
 # Simple PowerHAL
 PRODUCT_PACKAGES += \
     power.kagura
-
-# Fingerprint HAL
-PRODUCT_PACKAGES += \
-    fingerprint.kagura
 
 # NFC config
 PRODUCT_PACKAGES += \
