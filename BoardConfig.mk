@@ -15,10 +15,7 @@
 include device/sony/tone-common/PlatformConfigCarbon.mk
 include device/sony/tone-common/PlatformConfig.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := F8331
-
-# Platform
-PRODUCT_PLATFORM := tone
+TARGET_BOOTLOADER_BOARD_NAME := tone
 
 WIFI_BUS := PCIE
 
