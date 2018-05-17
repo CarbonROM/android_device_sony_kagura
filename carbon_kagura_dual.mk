@@ -29,7 +29,7 @@ $(call inherit-product, vendor/carbon/config/gsm.mk)
 $(call inherit-product, vendor/carbon/config/common.mk)
 
 # Override Product Name for CarbonROM
-PRODUCT_NAME := carbon_kagura
+PRODUCT_NAME := carbon_kagura_dual
 PRODUCT_MODEL := Xperia XZ Dual
 
 # Assert
