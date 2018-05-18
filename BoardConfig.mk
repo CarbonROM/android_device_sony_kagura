@@ -21,7 +21,8 @@ TARGET_BOOTLOADER_BOARD_NAME := F8331
 else ifneq (,$(filter %kagura_dual,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := F8332
 else
-$(error Unrecognized value for TARGET_PRODUCT: "$(TARGET_PRODUCT)")
+TARGET_BOOTLOADER_BOARD_NAME := F8331
+$(warning Unrecognized value for TARGET_PRODUCT: "$(TARGET_PRODUCT)", using default value: "$(TARGET_BOOTLOADER_BOARD_NAME)")
 endif
 
 # Platform
